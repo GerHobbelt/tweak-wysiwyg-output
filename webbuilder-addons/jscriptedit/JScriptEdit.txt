@@ -1,0 +1,93 @@
+JavaScript Edit for WYSIWYG Web builder
+
+
+What is JavaScript Edit?
+JavaScript Edit can be used to add/edit and remove the Ready-To-Use JavaScripts for WYSIWYG Web builder.
+The Ready-To-Use JavaScripts are stored in a file called 'js.dat' which can be found in the WYSIWYG Web builder folder.
+This is a XML file with all script and resources needed to make the script work. Most data in this file is base64-encoded.
+
+
+How to install JavaScript Edit?
+First copy the file 'js.dat' from the C:\Program Folder\WYSIWYG Web Builder 8\ folder to My Documents\WYSIYWG Web Builder\system\
+This makes sure you will not overwrite the original file and all your changes will not be overwritten if you install a new version of the software.
+WYSIWYG Web Builder automatically load your personal file (instead of the original one) the next time you load the scripts.
+
+Next unzip the JScriptEdit.exe into the same folder as js.dat.
+
+
+How to use JavaScript Edit?
+The usage of JavaScript Edit is pretty straight forward for users that are familiar with JavaScripts.
+When you start the application it will display the available javascripts. 
+Click Add to add a new script to the script database.
+Select one of the scripts and click Edit to change an existing script
+Select one of the scripts and click Delete to remove it from the database.
+
+Add/Edit JavaScripts
+The edit window includes the following fields:
+Name
+Name/description of the JavaScript
+
+Code
+The JavaScript code, this must include the <SCRIPT> and </SCRIPT> tags.
+Variables which can be changed by the end user are marked using %parameter%
+For example:
+If your JavaScript contains a variable for the speed like
+var speed = 10;
+you can turn this into a parameter:
+var speed = %speed%;
+next you need to add a parameter that wil refer to this value.
+
+Header Code
+The code you enter here will be inserted inside the <HEAD></HEAD> tags.
+
+Parameters
+Parameters which will be available to the end-user. Parameters refer to variables in the script code.
+Parameter Name: Name of the parameter that will be displayed in WYSIWYG Web builder.
+Parameter Type:
+image; displays a file selection dialog
+edit;  displays an editbox
+color; displays a colorpicker
+font;  displays a fontpicker
+enum;  displays a dropdown menu with the specified options
+url; displays a link picker
+
+Variable
+Reference to the variable in the code. For example: %speed%
+
+Value:
+Default value for this parameter
+
+Enum
+Available options for a dropdown menu seperated by |
+For example: 1|2|3|4|5|6|7
+
+
+Resources
+Images or other files which are used by the script.
+All files attached to a certain script are automatically placed in the same folder as the HTML file that contains the script.
+
+Copyright
+Original author/website of the script.
+
+Compatibility
+Specifies the browser compatibility (eg IE6, IE7, Firefox, Opera)
+
+No preview
+Enable this option to disable preview in the script selection dialog (in Ready-To-Use-JavaSript). This can be useful if the script only works online or takes a long time to load.
+
+Hide
+Enable this option to hide the script in the script selection dialog (in Ready-To-Use-JavaSript). Only used for obsolete scripts.
+
+Put script inside <DIV> tag (used to position the object)
+When this option is enabled the script is displayed on the position as specified in the WYSIWYG Web builder workspace (using DIV tags).
+When this option is disabled the script is added before the end of the <BODY> tag, without positioning info.
+
+
+Final Notes:
+- This utility is for advanced users only, use it at your own risk.
+- Check out the available examples, to get an idea how everything works.
+- If you have created a wondeful script and want to share it with all other Web builder users, please send me a copy of your js.dat file so maybe I can include it in one of the next Web Builder updates.
+
+
+Created by Pablo
+http://www.wysiwygwebbuilder.com

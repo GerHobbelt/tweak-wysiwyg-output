@@ -1,0 +1,173 @@
+09/01/2008 Version 1.0
+- Initial version
+
+09/06/2008 Version 1.1
+- New feature: You can now specify the color type for color properties (HTML, Flash, Other)
+- New feature: Drag & drop properties between categories.
+- New feature: Context menu in Properties and File tabs.
+
+09/18/2008 Version 1.2
+- New feature: Added most recently used (MRU) files to the menu.
+- New feature: Double-clicking an Extension Builder project (xwb) the Windows File Manager will open the project.
+- New feature: Built-in preview. Preview the extension you're working on, without having to launch WYSIWYG Web Builder!
+- New feature: Added 'numeric' property type with min/max value setting.
+- New feature: Added 'dataset' property type. An advanced property to define datasets, In combination with XML templates this allows you to create property arrays.
+This can be useful for navigation objects (menus), media players or other advanced elements.
+- Updated documentation.
+
+06/01/2009 Version 1.5
+- Improved: Scrollbar behavior of HTML fields
+- New feature: Added the ability to reorganize properties and categories (move up/down)
+- New feature: Added description field used by Extension Manager.
+- New feature: Added support for WB's asset manager so that assets will be copied to the relative folder.
+- New feature: Property window is now resizable.
+- New feature: Added 'Publish to image folder' option to 'file' property.
+- New feature: The name of a file (in the Files section) now can also be a variable, which make it possible to let the user specify the name of an output file. This can be useful for galleries that output XML files.
+
+09/24/2009 Version 2.0
+- New feature: Added support for multiple preview browsers.
+- New feature: Added option to specify the HTML document type for preview. 
+- New feature: Before <HTML> tag, Between <HEAD> tag and Between <BODY> tag are now have their own tabs for easier editing.
+- New feature: Added 'Add folder' button on the Files configuration page, to quickly include complete folders.
+- New feature: Added new edit field property type: multiple lines
+- New feature: Added new edit field property type: rich text format (simple HTML)
+- New feature: Added new edit field property type: html textbox
+- New feature: Added 'Render HTML' option. Now you can specify HTML that will be used to render the object in the designer, independent from the actual output HTML. 
+
+10/09/2009 Version 2.0.1
+- Fixed: Dataset columns are missing text.
+
+11/28/2009 Version 2.0.2
+- Fixed: Compatibility issue with WWB 6.5
+
+02/06/2010 Version 2.0.3
+- Fixed: Crash when adding URL to dataset.
+
+08/06/2010 Version 2.0.4
+- Extension Builder is now compatible with WWB 7. No longer requires WWB 6 to be installed.
+
+09/07/2010 Version 2.5.0
+- Fixed: The extension will now look in the correct location for htmltextbox.wbx
+- Fixed: Quotes can now be used in values.
+- Fixed: Many other minor bugs.
+- New feature: now has built-in jQuery support
+- New feature: Theme property type. Useful for jQuery projects that support ThemeRoller themes.
+- New feature: Added 'Clone' option to properties. Provides a quick way to clone properties or even complete catogies+properties!
+- New feature: Added 'Enable thumbnails' option to gallery property. This will automatically generate thumbnails if required. Also includes width/height/folder/prefix properties.
+- New feature: Added 'Editable' option to 'Options' property. Allows the user to enter a value that is not is the options list.
+
+09/17/2010 Version 2.5.1
+- Fixed: Minor problem with properties
+
+10/19/2010 Version 2.5.2
+- Fixed: Flash color now also works in DataSet
+- New feature: Added 'Editable' option to 'Options' property in DataSet.
+- New feature: Added 'Move Up/Move Down' to DataSet.
+
+11/22/2010 Version 2.6.0
+- Fixed: Problem with 'Publish this file to the user defined target folder' option.
+- New feature: Developer can now set the version of the extension. This will also be used in future versions of WB to query for updates.
+
+01/08/2011 Version 2.6.1
+- Fixed: Order of jQuery effect scripts.
+
+01/16/2012 Version 3.0.0
+- Fixed: Problem with Asset Management (filenames not being assigned correctly)
+- New feature: Holding 'SHIFT' while clicking 'Add' in dataset properties will copy/clone the selected item.
+- New feature: Added the ability to use different display values for options.
+- New feature: Added 'Document ready script' to HTML tab. Can be used to initialize jquery scripts.
+- New feature: Added 'publish to folder' to 'file' data type. Allows you to publish the specified file to a specific folder.
+- New feature: Added the possibility to publish files to user specific target folder or fixed folder in DataSets.
+- New feature: You can now use variables in any part of the filename eg: file$number$.xml or $name$.txt
+- New feature: Added option to sort property categories/values (or disable it...)
+- New feature: Added option to initially expand/collapse property categories.
+
+02/10/2012 Version 3.0.1
+- Fixed: Dataset default option has wrong initial value.
+- Fixed: If log is enabled only one instance of an extension can be loaded. Now the second instance will no longer fail to load. Although still one extension can access the log at a time...
+
+06/11/2012 Version 4.0.0
+- New feature: Completely redesigned the way user made extesions integrate with WYSIWYG Web Builder. They now run directly inside WWB. This means more control, faster loading, less memory usage, smaller extensions and more possibilties in the future.
+- New feature: Extensions now have a 'Help' button in the properties
+- New feature: Added 'Show links settings' to image gallery property. Makes it possible to hide the links settings if your extensions doesn't need it.
+- New feature: The URL property now supports file links, popup windows and smart links.
+- New feature: Added 'Use jquery theme' option (replaces 'Theme' property).
+- New feature: Added 'Navigation' property. Makes it easier to create menu extensions. Support list and tree style navigation. The user can also synchronize the menu with the Site manager. See PDF for mroe details/examples!
+- New feature: Added 'File collection' property. Adding this property will allow the user to select fiels to be published along with the page.
+- New feature: Added 'Test XSL template' option. With this option you can test XSL templates for the various property types (gallery, dataset, navigation).
+
+08/21/2012 Version 4.1.0
+- New feature: Added 'disable debug' option in Extensions Manager.
+- New feature: Added 'Enable events' option. Will add 'Events' property to properties. ' Use $EVENTS$ to add the events to your code!
+- New feature: It's no longer necessary to create a separate .uwbx extension! Non-unicode extensions will be converted 'on the fly'.
+- New feature: Rich text editor now supports links.
+Note: These new features are only available in WYSIWYG Web Builder 8.5. However the extesions will also work in version 8.2, although the new options will be missing.
+
+07/08/2013 Version 4.2.0
+- Added support for jQuery 1.9.1. Note that users can still select 1.7.2 in the page properties if necessary.
+- Extensions created with this version will only work on WYSIWYG Web Builder 9 and newer.
+- Remove colored backgrounds from tabs.
+
+03/21/2014 Version 4.3.0
+- You can now set default data set values with the new 'Default values' option in the data set properties. Requires WYSIWYG Web Builder 9.4 or newer!
+
+08/28/2014 Version 5.0.0
+- New feature: Added 'Designed for' option. Specifies whether the extension should be available in standard or mobile pages (or both).
+- New feature: Added 'Set Extensions Folder' in tools menu. If this folder is set then Extension Builder will make a copy of the extension to this folder after it has been build.
+
+02/10/2015 Version 5.1.0
+- New feature: Added 2 new HTML insertion points: 'After <body> tag' and 'Before </body> tag'. This adds the ability to insert code before and after the body <div> container.
+
+03/28/2015 Version 5.2.0
+- New feature: Added 'Between <style> tag' option. Requires WWB 10.3.3
+
+01/28/2016 Version 5.2.1
+- Added support for WYSIWYG Web Builder 11
+
+02/10/2016 Version 5.3.0
+- Extension's 'Live rendering' is now using IE Edge rendering engine, just like WWB11
+
+02/12/2016 Version 5.3.1
+- HTML input can now be larger than 32K
+
+04/21/2016 Version 5.3.2
+- Significantly improved performance for larger extensions.
+
+11/11/2016 Version 5.5
+- Added 'Enable Layer' option. This turns the extension into a container for other objects. This can be useful to create a layer or form-like extension. See the documentation for more details.
+
+04/14/2018 Version 6.0
+- Added new toolbar icons
+- Added 'RGB' color type for compatbility with Muse widgets.
+- Added the ability to import (Adobe) Muse Configurable Options Widget (.mucow) files. Besides the ability to import .mucow files, there is also limited support for .mulib widgets. 
+
+04/21/2018 Version 6.1
+- Added the ability to import (Serif) .wpack add-on files. The code and assets will be imported "AS IS", that means that there are no properties. But of course you can add those yourself...
+
+11/22/2018 Version 6.1.1
+- Added 'RGB' color type to dataset properties (requires 14.4.2)
+
+05/01/2019 Version 6.2
+- Improved: Extension data sets values preserve leading/trailing spaces.
+
+09/16/2019 Version 6.3
+- Added conditional properties to 'Options' property. This adds the ability to show, hide, enable or disable other properties/categories based on the selected value of the option property.
+
+10/16/2019 Version 6.4
+- Added support for multiple undo levels in code editors.
+- Added support for find and replace in code editor.
+- Added edit commands to main menu (in addition to the context menu).
+
+03/14/2021 Version 6.5
+- Added support for Icon Libraries, like Font Awesome, Material Icons etc
+
+05/16/2021 Version 6.5.1
+- Added support for 'popper.min.js'
+
+03/25/2022 Version 7.0.0
+- Modernized the UI Framework with MS Office, Visual Studio and Scenic theming support.
+- UI is now DPI aware.
+- Added command to open PDF documentation in Help menu (F1). 
+- Added the ability to customize menu, toolbar and keyboard shortcuts.
+- Added the ability to set the editor font.
+- Added 'Auto detect' option to browser list configuration.
